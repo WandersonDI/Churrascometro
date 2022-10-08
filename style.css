@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-image: linear-gradient(90deg, #fdd034, #d52d8b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 40px;
+    color: #58193d;
+    text-shadow: 10px 5px  rgba(179, 101, 49, 0.671);
+    margin: 60px;
+    
+}
+
+#container{
+
+    width: 80%;
+    border-radius: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 15px 15px 10px rgba(109, 78, 100, 0.712);
+
+}
+.desc{
+    width: 50%;
+    text-align: center;
+    background-color: #a30f5e4b;
+    border-radius: 70px 0 0 0;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
+
+.desc > img{
+    width: 300px;
+}
+.calc{
+    width: 50%;
+    padding: 20px;
+    background-color: #bb9a2552;
+    border-radius: 0 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+form{
+    width: 100%;
+    text-align: center;
+}
+.campo > input{
+    width: 100%;
+    height: 50px;
+    background-color: #492539ab;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    transition: all 650ms;
+}
+
+.campo > input:hover{
+    background-color: #2dd54946;
+}
+fieldset{
+    border: none;
+}
+
+input[type="button"]{
+    width: 35%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #a30f5e4b;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 650ms;
+
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: #4e0a2e9a;
+    width: 50%;
+}
+
+#resultado{
+    width: 100%;
+    margin-top: 30px;
+    background-color: #ffffffce;
+    font-weight: 600;
+    font-size: 25px;
+    box-shadow:inset 2px 2px 20px rgb(165, 94, 94)    ;
+}
+
+@media (max-width: 915px){
+    #container{
+        flex-direction: column;
+        border-radius: 0;
+        margin-bottom: 50px;
+    }
+    .desc{
+        width: 100%;
+    }
+    .calc{
+        width: 100%;
+        border-radius: 0;
+        
+        
+    }
+}
+
+@media (max-width: 700px){
+    .title{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+    #container{
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+    .desc{
+        border-radius: 0;
+        font-size: 20px;
+    }
+    .desc > img{
+        width: 200px;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
